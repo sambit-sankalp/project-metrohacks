@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/ProfileCard.css";
 
-const ProfileCard = ({ image, title }) => {
+const ProfileCard = ({ image, title, attendee }) => {
   return (
     <div className="profileCard">
       <div>
@@ -17,7 +17,7 @@ const ProfileCard = ({ image, title }) => {
           repudiandae, enim vel unde quia cum maxime deleniti pariatur ipsam?
           Dolores, tempore.
         </div>
-        <div className="profileCardAttendee">229 people attended</div>
+        <div className="profileCardAttendee">{attendee}</div>
       </div>
     </div>
   );
