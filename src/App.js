@@ -1,9 +1,10 @@
-import UserProfile from "./pages/UserProfile";
+import UserProfile from './pages/UserProfile';
+import SignIn from './components/AuthScreens/SignIn';
 
 function App() {
   return (
     <div className="App">
-      <UserProfile />
+      <SignIn />
     </div>
   );
 }
