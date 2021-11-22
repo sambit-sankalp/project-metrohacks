@@ -1,5 +1,133 @@
 .UserPage {
-  width: 100vw;
-  height: 100vh;
   background-color: #d7f5ff;
+}
+
+.UserDetails {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 250px 3fr;
+}
+.userImage {
+  margin: auto;
+}
+.userImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.userProfileDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.UserName {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.UserBio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.UserProfileConnections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.UserProfileConnections div {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 20px;
+}
+
+.UserProfileConnections div h1 {
+  text-align: center;
+}
+
+.UserProfileConnections :first-child {
+  margin-left: 0px;
+}
+
+.border {
+  width: 80%;
+  margin: auto;
+  border-bottom: 10px solid black;
+}
+
+.SocialWorkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: auto;
+}
+
+.socialWorkTitle {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.userNameButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.userNameButton button {
+  background-color: #8cc63e;
+  border: 0;
+  width: 100px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 968px) {
+  .UserProfileConnections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .UserDetails {
+    grid-template-columns: 1fr;
+  }
+  .UserName {
+    text-align: center;
+  }
+  .UserBio {
+    text-align: center;
+  }
+  .UserProfileConnections div {
+    text-align: center;
+  }
+  .UserProfileConnections div {
+    margin-left: 20px !important;
+  }
+  .userNameButton {
+    flex-direction: column;
+  }
+  .userNameButton button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .SocialWorkGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .SocialWorkGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
