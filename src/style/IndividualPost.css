@@ -1,0 +1,39 @@
+.background {
+  background-color: #d7f5ff;
+}
+
+.IndividualPostTitle {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 102.07%;
+  text-align: center;
+  padding: 30px 0;
+}
+.IndividualPost {
+  background-color: #d7f5ff;
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.IndividualPostImage {
+  text-align: center;
+}
+
+.IndividualPostList ul {
+  font-family: Calibri;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.IndividualPostGallery img {
+  max-width: 1000px;
+  width: 90%;
+  text-align: center;
+}
