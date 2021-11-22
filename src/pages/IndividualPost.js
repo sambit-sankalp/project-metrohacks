@@ -1,6 +1,8 @@
 import React from "react";
 import "../style/IndividualPost.css";
 import Heading from "../components/Heading";
+import UserSuggestionCard from "../components/UserSuggestionCard";
+import Button from "../components/Button";
 
 const IndividualPost = () => {
   return (
@@ -62,6 +64,14 @@ const IndividualPost = () => {
             </ul>
           </div>
         </div>
+
+        <div className="IndividualPostSocials">
+          <UserSuggestionCard name="Hemant Bajaj" />
+          <h2>Want to Collab with us?</h2>
+          <Button text="Contact Here!!" />
+          <h3>279 People attended</h3>
+        </div>
+
         <div className="IndividualPostGallery">
           <Heading title="Galleria" />
           <img src="/Frame10.png" alt="" />

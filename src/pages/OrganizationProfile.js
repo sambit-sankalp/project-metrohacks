@@ -3,7 +3,7 @@ import Button from "../components/Button";
 import ProfileCard from "../components/ProfileCard";
 import "../style/UserPage.css";
 
-const UserProfile = () => {
+const OrganizationProfile = () => {
   return (
     <div className="UserPage">
       <div className="UserDetails">
@@ -15,24 +15,17 @@ const UserProfile = () => {
         </div>
         <div className="userProfileDetails">
           <div className="userNameButton">
-            <h1 className="UserName">John Doe</h1>
-            <Button text="follow" />
+            <h1 className="UserName">Unicef</h1>
+            <Button text="Join" />
           </div>
 
           <h3 className="UserBio">A social worker, community builder</h3>
           <div className="UserProfileConnections">
             <div>
-              <h3>176</h3>
-              <h3>Organization</h3>
-            </div>
-            <div>
               <h3>150</h3>
-              <h3>Followed</h3>
+              <h3>Members</h3>
             </div>
-            <div>
-              <h3>100</h3>
-              <h3>Following</h3>
-            </div>
+
             <div>
               <h3>50</h3>
               <h3>Events</h3>
@@ -42,42 +35,42 @@ const UserProfile = () => {
       </div>
       <div className="border"></div>
       <div className="socialWork">
-        <h1 className="socialWorkTitle">Social Works</h1>
+        <h1 className="socialWorkTitle">Upcoming Events</h1>
         <div className="SocialWorkGrid">
           <ProfileCard
             image="/image9.png"
             title="Tree Plantation"
-            attendee="185 people attended"
+            attendee="200 people registered"
           />
           <ProfileCard
             image="/image11.png"
             title="Beach Cleaning"
-            attendee="165 people attended"
+            attendee="176 people registered"
           />
           <ProfileCard
             image="/image13.png"
             title="Food Sharing"
-            attendee="145 people attended"
+            attendee="145 people registered"
           />
         </div>
       </div>
       <div className="socialWork">
-        <h1 className="socialWorkTitle">Events attended</h1>
+        <h1 className="socialWorkTitle">Past Events</h1>
         <div className="SocialWorkGrid">
           <ProfileCard
             image="/image9.png"
             title="Tree Plantation"
-            attendee="319 people attended"
+            attendee="145 people attended"
           />
           <ProfileCard
             image="/image11.png"
             title="Beach Cleaning"
-            attendee="279 people attended"
+            attendee="179 people attended"
           />
           <ProfileCard
             image="/image13.png"
             title="Food Sharing"
-            attendee="239 people attended"
+            attendee="219 people attended"
           />
         </div>
       </div>
@@ -85,4 +78,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default OrganizationProfile;

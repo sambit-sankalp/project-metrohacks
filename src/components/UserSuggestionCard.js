@@ -1,12 +1,12 @@
 import React from "react";
 import "../style/UserSuggestionCard.css";
 
-const UserSuggestionCard = () => {
+const UserSuggestionCard = ({ name, bio }) => {
   return (
     <div className="suggestedUser">
       <img src="/image8.png" alt="" />
-      <h1>John Doe</h1>
-      <h4>A social worker, community builder</h4>
+      <h1>{name}</h1>
+      {bio && <h4>{bio}</h4>}
     </div>
   );
 };

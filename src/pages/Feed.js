@@ -19,10 +19,10 @@ const Feed = () => {
 
         <div className="homeSuggestion">
           <h1>Suggestion</h1>
-          <UserSuggestionCard />
-          <UserSuggestionCard />
-          <UserSuggestionCard />
-          <UserSuggestionCard />
+          <UserSuggestionCard name="Sambit Sankalp" bio="Social Worker" />
+          <UserSuggestionCard name="Prachi Nandi" bio="Social Worker" />
+          <UserSuggestionCard name="Hemant Bajaj" bio="Social Worker" />
+          <UserSuggestionCard name="Priyank Singh" bio="Social Worker" />
         </div>
       </div>
       <div className="homeRight">
