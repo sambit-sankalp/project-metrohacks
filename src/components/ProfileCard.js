@@ -1,19 +1,15 @@
 import React from "react";
 import "../style/ProfileCard.css";
 
-const ProfileCard = () => {
+const ProfileCard = ({ image, title }) => {
   return (
     <div className="profileCard">
       <div>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShk41e5xiIV70ex9TcpZZLnkenEKywJ2PiVg&usqp=CAU"
-          alt=""
-          className="ProfileCardImage"
-        />
+        <img src={image} alt="" className="ProfileCardImage" />
       </div>
       <div className="profileCardText">
         <div className="profileCardTitle">
-          <h1>Tree Plantation</h1>
+          <h1>{title}</h1>
         </div>
         <div className="profileCardDescription">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab

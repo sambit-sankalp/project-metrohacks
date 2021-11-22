@@ -1,0 +1,13 @@
+.heading {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  margin: 40px 0;
+  width: fit-content;
+}
+
+.heading h1 {
+  margin: 20px 0;
+}
