@@ -16,7 +16,7 @@ const UserProfile = () => {
         <div className="userProfileDetails">
           <div className="userNameButton">
             <h1 className="UserName">John Doe</h1>
-            <Button text="follow" />
+            <Button text="Follow" />
           </div>
 
           <h3 className="UserBio">A social worker, community builder</h3>
