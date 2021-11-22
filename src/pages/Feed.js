@@ -1,10 +1,11 @@
-import React from "react";
-import Button from "../components/Button";
-import FeedPostCard from "../components/FeedPostCard";
-import Heading from "../components/Heading";
-import HomeStory from "../components/HomeStory";
-import UserSuggestionCard from "../components/UserSuggestionCard";
-import "../style/Feed.css";
+import React from 'react';
+import Button from '../components/Button';
+import FeedPostCard from '../components/FeedPostCard';
+import Heading from '../components/Heading';
+import HomeStory from '../components/HomeStory';
+import UserSuggestionCard from '../components/UserSuggestionCard';
+import { Link } from 'react-router-dom';
+import '../style/Feed.css';
 
 const Feed = () => {
   return (
@@ -14,7 +15,9 @@ const Feed = () => {
           <div className="userPhoto">
             <img src="/image8.png" alt="" />
           </div>
-          <Button text="See Your Profile" />
+          <Link to="/user/profile" style={{ textDecoration: 'none' }}>
+            <Button text="See Your Profile" link="/user/profile" />
+          </Link>
         </div>
 
         <div className="homeSuggestion">

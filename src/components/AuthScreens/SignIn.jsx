@@ -1,6 +1,5 @@
 import React from 'react';
-
-import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import {
   IconButton,
@@ -10,69 +9,7 @@ import {
   FormControl,
 } from '@mui/material';
 import { Google, Visibility, VisibilityOff } from '@mui/icons-material';
-
-const img =
-  'https://res.cloudinary.com/sambitsankalp/image/upload/v1637573159/metrohacks/image_5_fxgrso.png';
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url(${img});
-`;
-
-const SubContainer = styled.div`
-  width: 526px;
-  height: auto;
-  background-color: #eeffff;
-  border-radius: 50px;
-  margin: 20px 80px;
-  padding: 50px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-const Line = styled.div`
-  width: 50px;
-  height: 2px;
-  background-color: #000;
-  margin-top: 20px;
-`;
-
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  border-radius: 10px;
-  background-color: #8cc63e;
-  color: #000000;
-  cursor: pointer;
-  margin-top: 20px;
-  &:hover {
-    background-color: #69a617;
-  }
-  .icon {
-    color: #000000;
-  }
-`;
-
-const Text = styled.h3`
-  font-size: 20px;
-  color: #000000;
-`;
+import { Container, SubContainer, Line, Button, Text } from './styles';
 
 const SignIn = () => {
   const [values, setValues] = React.useState({
@@ -104,9 +41,11 @@ const SignIn = () => {
   return (
     <Container>
       <SubContainer>
-        <Button type="submit">
-          <Text>Sign In As Organisation</Text>
-        </Button>
+        <Link to="/org/signin" style={{ textDecoration: 'none' }}>
+          <Button>
+            <Text>Sign In As Organisation</Text>
+          </Button>
+        </Link>
         <Line />
         <img
           style={{ marginTop: '20px' }}
@@ -151,7 +90,9 @@ const SignIn = () => {
           <Button type="submit">
             <Text>Sign In</Text>
           </Button>
-          <Text>Don't have a account? Sign Up</Text>
+          <Link to="/user/signup">
+            <Text>Don't have a account? Sign Up</Text>
+          </Link>
           <Line />
           <Button style={{ marginTop: '20px' }}>
             <IconButton className="icon">

@@ -1,5 +1,7 @@
-import React from "react";
-import "../style/FeedPostCard.css";
+import { color } from '@mui/system';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../style/FeedPostCard.css';
 
 const FeedPostCard = () => {
   return (
@@ -9,7 +11,12 @@ const FeedPostCard = () => {
           <img src="/image8.png" alt="" />
         </div>
         <div className="PostUserName">
-          <h1>Societal Community</h1>
+          <Link
+            to="/org/profile"
+            style={{ textDecoration: 'none', color: '#000' }}
+          >
+            <h1>Societal Community</h1>
+          </Link>
           <h4>Posted 5 min ago</h4>
         </div>
       </div>

@@ -1,5 +1,6 @@
-import React from "react";
-import "../style/UserPage.css";
+import React from 'react';
+
+import '../style/UserPage.css';
 
 const Button = ({ text }) => {
   return <button className="btn"> {text}</button>;

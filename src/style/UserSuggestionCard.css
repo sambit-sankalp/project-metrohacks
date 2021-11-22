@@ -23,3 +23,8 @@
   border-radius: 50%;
   margin: auto;
 }
+
+.text {
+  color: black;
+  font-size: 100px;
+}
