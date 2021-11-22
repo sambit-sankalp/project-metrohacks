@@ -1,13 +1,21 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
 .profileCard {
   width: 300px;
   height: 400px;
   background-color: #eeffff;
   border-radius: 50px;
+  margin: 20px auto;
 }
 
 .ProfileCardImage {
   width: 300px;
   height: 200px;
+  border-radius: 50px;
 }
 
 .profileCardText {
