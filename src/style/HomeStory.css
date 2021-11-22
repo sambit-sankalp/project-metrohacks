@@ -1,0 +1,8 @@
+.HomeStoryCard {
+  margin: 20px;
+}
+.HomeStoryCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

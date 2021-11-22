@@ -1,4 +1,3 @@
-import UserProfile from './pages/UserProfile';
 import SignIn from './components/AuthScreens/SignIn';
 
 function App() {
