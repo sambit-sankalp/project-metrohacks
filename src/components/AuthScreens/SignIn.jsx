@@ -87,19 +87,23 @@ const SignIn = () => {
               label="Password"
             />
           </FormControl>
-          <Button type="submit">
-            <Text>Sign In</Text>
-          </Button>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button type="submit">
+              <Text>Sign In</Text>
+            </Button>
+          </Link>
           <Link to="/user/signup">
             <Text>Don't have a account? Sign Up</Text>
           </Link>
           <Line />
-          <Button style={{ marginTop: '20px' }}>
-            <IconButton className="icon">
-              <Google />
-            </IconButton>
-            <Text>Sign In With Google</Text>
-          </Button>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button style={{ marginTop: '20px' }}>
+              <IconButton className="icon">
+                <Google />
+              </IconButton>
+              <Text>Sign In With Google</Text>
+            </Button>
+          </Link>
         </form>
       </SubContainer>
     </Container>

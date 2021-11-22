@@ -55,7 +55,7 @@ const SignUp = () => {
         <form className="form" onSubmit={submitHandler}>
           <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
             <InputLabel htmlFor="outlined-adornment-username">
-              Name OF Organisation
+              Name Of Organisation
             </InputLabel>
             <OutlinedInput
               id="outlined-adornment-username"
@@ -99,19 +99,23 @@ const SignUp = () => {
               label="Password"
             />
           </FormControl>
-          <Button type="submit">
-            <Text>Register</Text>
-          </Button>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button type="submit">
+              <Text>Register</Text>
+            </Button>
+          </Link>
           <Link to="/org/signin">
             <Text>Already have a account? Sign In</Text>
           </Link>
           <Line />
-          <Button style={{ marginTop: '20px' }}>
-            <IconButton className="icon">
-              <Google />
-            </IconButton>
-            <Text>Sign In With Google</Text>
-          </Button>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button style={{ marginTop: '20px' }}>
+              <IconButton className="icon">
+                <Google />
+              </IconButton>
+              <Text>Sign In With Google</Text>
+            </Button>
+          </Link>
         </form>
       </SubContainer>
     </Container>
