@@ -22,7 +22,6 @@ const Container = styled.div`
   align-items: center;
   min-height: 100vh;
   background-image: url(${img});
-  padding: 30px;
 `;
 
 const SubContainer = styled.div`
@@ -30,18 +29,26 @@ const SubContainer = styled.div`
   height: auto;
   background-color: #eeffff;
   border-radius: 50px;
-  padding: 50px 100px;
+  margin: 20px 80px;
+  padding: 50px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   .form {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+`;
+
+const Line = styled.div`
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  margin-top: 20px;
 `;
 
 const Button = styled.button`
@@ -54,6 +61,9 @@ const Button = styled.button`
   color: #000000;
   cursor: pointer;
   margin-top: 20px;
+  &:hover {
+    background-color: #69a617;
+  }
   .icon {
     color: #000000;
   }
@@ -62,7 +72,6 @@ const Button = styled.button`
 const Text = styled.h3`
   font-size: 20px;
   color: #000000;
-  padding: 20px;
 `;
 
 const SignIn = () => {
@@ -98,19 +107,13 @@ const SignIn = () => {
         <Button type="submit">
           <Text>Sign In As Organisation</Text>
         </Button>
+        <Line />
+        <img
+          style={{ marginTop: '20px' }}
+          src="https://res.cloudinary.com/sambitsankalp/image/upload/v1637583188/metrohacks/image_6_halm5y.png"
+          alt="tree"
+        />
         <form className="form" onSubmit={submitHandler}>
-          <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-username">
-              Username
-            </InputLabel>
-            <OutlinedInput
-              id="outlined-adornment-username"
-              type="text"
-              value={values.username}
-              onChange={handleChange('username')}
-              label="Username"
-            />
-          </FormControl>
           <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
             <InputLabel htmlFor="outlined-adornment-email">Email</InputLabel>
             <OutlinedInput
@@ -146,10 +149,11 @@ const SignIn = () => {
             />
           </FormControl>
           <Button type="submit">
-            <Text>Register</Text>
+            <Text>Sign In</Text>
           </Button>
-          <Text>Already have a account? Sign In</Text>
-          <Button style={{ marginTop: '30px' }}>
+          <Text>Don't have a account? Sign Up</Text>
+          <Line />
+          <Button style={{ marginTop: '20px' }}>
             <IconButton className="icon">
               <Google />
             </IconButton>

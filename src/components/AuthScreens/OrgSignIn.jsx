@@ -74,7 +74,7 @@ const Text = styled.h3`
   color: #000000;
 `;
 
-const SignUp = () => {
+const SignIn = () => {
   const [values, setValues] = React.useState({
     email: '',
     password: '',
@@ -105,7 +105,7 @@ const SignUp = () => {
     <Container>
       <SubContainer>
         <Button type="submit">
-          <Text>Sign Up As Organisation</Text>
+          <Text>Sign In As User</Text>
         </Button>
         <Line />
         <img
@@ -114,18 +114,6 @@ const SignUp = () => {
           alt="tree"
         />
         <form className="form" onSubmit={submitHandler}>
-          <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
-            <InputLabel htmlFor="outlined-adornment-username">
-              Username
-            </InputLabel>
-            <OutlinedInput
-              id="outlined-adornment-username"
-              type="text"
-              value={values.username}
-              onChange={handleChange('username')}
-              label="Username"
-            />
-          </FormControl>
           <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
             <InputLabel htmlFor="outlined-adornment-email">Email</InputLabel>
             <OutlinedInput
@@ -161,9 +149,9 @@ const SignUp = () => {
             />
           </FormControl>
           <Button type="submit">
-            <Text>Register</Text>
+            <Text>Sign In</Text>
           </Button>
-          <Text>Already have a account? Sign In</Text>
+          <Text>Don't have a account? Sign Up</Text>
           <Line />
           <Button style={{ marginTop: '20px' }}>
             <IconButton className="icon">
@@ -177,4 +165,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;

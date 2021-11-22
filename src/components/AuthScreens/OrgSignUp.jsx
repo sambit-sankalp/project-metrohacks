@@ -105,7 +105,7 @@ const SignUp = () => {
     <Container>
       <SubContainer>
         <Button type="submit">
-          <Text>Sign Up As Organisation</Text>
+          <Text>Sign Up As User</Text>
         </Button>
         <Line />
         <img
@@ -116,7 +116,7 @@ const SignUp = () => {
         <form className="form" onSubmit={submitHandler}>
           <FormControl sx={{ m: 1, width: '50ch' }} variant="outlined">
             <InputLabel htmlFor="outlined-adornment-username">
-              Username
+              Name OF Organisation
             </InputLabel>
             <OutlinedInput
               id="outlined-adornment-username"

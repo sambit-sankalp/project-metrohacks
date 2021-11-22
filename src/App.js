@@ -1,4 +1,4 @@
-import SignIn from './components/AuthScreens/SignIn';
+import SignIn from './components/AuthScreens/OrgSignIn';
 
 function App() {
   return (
