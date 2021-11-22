@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../components/Button";
 import ProfileCard from "../components/ProfileCard";
 import "../style/UserPage.css";
 
@@ -15,7 +16,7 @@ const UserProfile = () => {
         <div className="userProfileDetails">
           <div className="userNameButton">
             <h1 className="UserName">John Doe</h1>
-            <button> Follow</button>
+            <Button text="follow" />
           </div>
 
           <h3 className="UserBio">A social worker, community builder</h3>
@@ -43,17 +44,17 @@ const UserProfile = () => {
       <div className="socialWork">
         <h1 className="socialWorkTitle">Social Works</h1>
         <div className="SocialWorkGrid">
-          <ProfileCard />
-          <ProfileCard />
-          <ProfileCard />
+          <ProfileCard image="/image9.png" title="Tree Plantation" />
+          <ProfileCard image="/image11.png" title="Beach Cleaning" />
+          <ProfileCard image="/image13.png" title="Food Sharing" />
         </div>
       </div>
       <div className="socialWork">
         <h1 className="socialWorkTitle">Events attended</h1>
         <div className="SocialWorkGrid">
-          <ProfileCard />
-          <ProfileCard />
-          <ProfileCard />
+          <ProfileCard image="/image9.png" title="Tree Plantation" />
+          <ProfileCard image="/image11.png" title="Beach Cleaning" />
+          <ProfileCard image="/image13.png" title="Food Sharing" />
         </div>
       </div>
     </div>

@@ -1,0 +1,63 @@
+.home {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+}
+
+.homeLeft {
+  background-color: #d7f5ff;
+  width: 100%;
+}
+
+.homeUserProfile {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.userPhoto {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.userPhoto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.homeSuggestion {
+  margin: auto;
+  text-align: center;
+}
+
+.homeRight {
+  background-color: #eeffff;
+  padding: 0 40px;
+  overflow-x: hidden;
+}
+
+.homeSuggestion h1 {
+  font-family: Calibri;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.homeStories {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.homeStories::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .homeLeft {
+    display: none;
+  }
+  .home {
+    grid-template-columns: 1fr;
+  }
+}

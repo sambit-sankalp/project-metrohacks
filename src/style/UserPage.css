@@ -56,9 +56,9 @@
 }
 
 .border {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .SocialWorkGrid {
@@ -79,15 +79,14 @@
   flex-direction: row;
 }
 
-.userNameButton button {
+.btn {
   background-color: #8cc63e;
   border: 0;
-  width: 100px;
   border-radius: 20px;
   font-weight: 700;
   font-size: 20px;
   color: white;
-  padding: 5px;
+  padding: 5px 20px;
   text-align: center;
   align-items: center;
   margin: 0 20px;
